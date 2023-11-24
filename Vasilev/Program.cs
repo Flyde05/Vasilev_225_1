@@ -4,14 +4,15 @@ namespace Vasilev
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.Write("Введите стороны А и B по очереди: ");
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            double S = a * b;
-            double P = 2 * (a + b);
-            Console.WriteLine("Периметр (P) = {0}, Площадь (S) = {1}", P, S);
+            Console.Write("Insert X1: ");
+            var x1 = double.Parse(Console.ReadLine());
+            Console.Write("Insert X2: ");
+            var x2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(Math.Abs(x2 - x1));
+            Console.ReadLine();
         }
     }
 }
